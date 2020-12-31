@@ -1,9 +1,9 @@
-const  XBOT = 'AMPIBI'; // Nama Bot Whatsapp
-const instagram = 'https://instagram.com/affis_saputro123'; // Nama Instagramlu cok
-const nomer = 'https://Wa.me/+6282334297175'; // Nomor whatsapplu cok
+const  XBOT = 'D1CKBOT'; // Nama Bot Whatsapp
+const instagram = 'https://instagram.com'; // Nama Instagramlu cok
+const nomer = 'https://Wa.me/+13132900007'; // Nomor whatsapplu cok
 const aktif = 'Tergantung kuota'; // Kapan bot lu aktif
-const groupwa = 'comming soon'; // OFFICIAL GRUP LU 1
-const youtube = 'https://youtube.com/channel/UCYKxsg7iF9a9IZyXQRNsvqw'; 
+const groupwa = 'https://chat.whatsapp.com/DdJa4YuH7q9Cuw90RLs851'; // OFFICIAL GRUP LU 1
+const youtube = 'https://youtube.com'; 
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
 const cheerio = require("cheerio");
@@ -23,7 +23,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:affis\n' // full name
             + 'ORG:Owner  XBOT Bot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=6282334297175:+62 823-3429-7175\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=13132900007:+1313-290-0007\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 
 const
@@ -77,7 +77,7 @@ conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @affis_saputro123`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @MR_DICK`)
 })
 
 conn.on('message-new', async(m) =>
@@ -145,8 +145,8 @@ conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
 else if (text == '#owner'){
 conn.sendMessage(id, 'Owner XBOT wa.me/+6282334297175' ,MessageType.text);
 }
-else if (text == 'affis'){
-conn.sendMessage(id, 'Aku BOT nya XBOT' ,MessageType.text);
+else if (text == 'DICK'){
+conn.sendMessage(id, 'Aku BOT nya MR DICK' ,MessageType.text);
 }
 else if (text == 'audio'){
 conn.sendMessage(id, 'pacar owner ihh' ,MessageType.text);
