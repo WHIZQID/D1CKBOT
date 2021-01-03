@@ -21,8 +21,8 @@ const speed = require('performance-now');
 const readTextInImage = require('./lib/ocr')
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:affis\n' // full name
-            + 'ORG:Owner  XBOT Bot;\n' // the organization of the contact
+            + 'FN:D1CKBOT\n' // full name
+            + 'ORG:Owner  D1CKBOT Bot;\n' // the organization of the contact
             + 'TEL;type=CELL;type=VOICE;waid=13132900007:+1313-290-0007\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 
@@ -73,7 +73,7 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @affis_saputro123`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @MR_DICK`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
@@ -1061,10 +1061,10 @@ else if (text == '#foto'){
 conn.sendMessage(id, 'kirim .foto cewek/cowok\n\nContoh: .foto cewek' ,MessageType.text);
 }
 else if (text == '#menu'){
-conn.sendMessage(id, ' 🔍Thanks Telah Menggunakan BOT *XBOT* , Follow Instagram Mimin Yah🔍� : https://instagram.com/@affis_saputro123' ,MessageType.text);
+conn.sendMessage(id, ' 🔍Thanks Telah Menggunakan BOT *D1CKBOT* , Follow Twitter Mimin Yah🔍� : https://twitter.com/BaLa_DE19WA' ,MessageType.text);
 }
 else if (text == '#info'){
-conn.sendMessage(id, ' 🔍Thanks Telah Menggunakan BOT *XBOT* , Follow Instagram Mimin Yah🔍� : https://instagram.com/@affis_saputro123' ,MessageType.text);
+conn.sendMessage(id, ' 🔍Thanks Telah Menggunakan BOT *XBOT* , Follow Twitter.com Mimin Yah🔍� : https://twitter.com/BaLa_DE19WA' ,MessageType.text);
 }
 if (messageType == 'imageMessage')
    {
